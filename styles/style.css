@@ -21,7 +21,7 @@
 }
 
 .header__menu-link {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   text-decoration: none;
 }
 
@@ -41,11 +41,11 @@
 .header__address-phone,
 .header__address-mail {
   text-decoration: none;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 .address {
   font-style: normal;
-  line-height: 22px;
+  line-height: 1.25;
 }
 
 /* секция cover */
@@ -110,8 +110,8 @@
 
 .cover__description-text {
   word-spacing: 18px;
-  line-height: 28px;
 }
+
 .bet-button {
   border: 1px solid white;
   background-color: transparent;
@@ -140,7 +140,6 @@
 
 .lots__card-list-item {
   width: 334px;
-  /* min-height: 596px; */
 }
 
 .card-link {
@@ -258,26 +257,26 @@
 }
 
 .footer__address {
-  line-height: 1.55;
+  line-height: 1.35;
 }
 
 .footer__address-phone,
 .footer__address-mail {
   text-decoration: none;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 
 .footer__menu-list {
   list-style: none;
   justify-items: center;
   text-transform: lowercase;
-  line-height: 1.37;
+  line-height: 1.15;
 }
 
 .footer__menu-link {
   line-height: 0.05;
   text-decoration: none;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 
 .footer__menu-link_active {
