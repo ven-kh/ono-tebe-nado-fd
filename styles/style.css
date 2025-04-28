@@ -4,14 +4,13 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
-  padding: 0 50px;
+  padding: 90px 50px 94px;
   font-size: 18px;
 }
 
 .header__menu-list {
   display: flex;
-  gap: 30px;
+  gap: 33px;
   list-style: circle;
   text-transform: lowercase;
 }
@@ -35,17 +34,18 @@
 }
 
 .header__address {
-  padding-left: 193px;
+  max-width: 240px;
+  justify-self: end;
 }
 
-.header__address-phone,
-.header__address-mail {
-  text-decoration: none;
-  border-bottom: 1px solid;
-}
 .address {
   font-style: normal;
-  line-height: 1.25;
+  line-height: 1.35;
+}
+
+.address-link {
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 /* секция cover */
@@ -57,6 +57,7 @@
   position: relative;
   min-height: 757px;
   display: flex;
+  flex-direction: column;
 }
 
 .overlay {
@@ -71,12 +72,12 @@
 }
 
 .cover__title {
-  line-height: 130%;
+  line-height: 1.35;
   text-transform: uppercase;
   font-size: 100px;
   z-index: 3;
   color: white;
-  padding: 165px 50px 0;
+  padding: 155px 50px 96px;
   letter-spacing: 30px;
 }
 
@@ -102,7 +103,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 50px 0;
+  padding: 0 50px;
   font-size: 22px;
   text-transform: uppercase;
   z-index: 3;
@@ -132,9 +133,11 @@
 .lots__card-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
   padding: 24px;
+  gap: 24px;
 }
 
 .lots__card-list-item {
@@ -152,24 +155,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -183,7 +182,8 @@
 
 .card__text {
   font-size: 20px;
-  line-height: 123%;
+  line-height: 120%;
+  padding-bottom: 8px;
   z-index: 3;
 }
 
@@ -240,7 +240,7 @@
   padding-top: 10px;
 }
 
-.about__text-first {
+.about__text-with-padding {
   padding: 10px 0 20px;
 }
 
@@ -253,16 +253,6 @@
   height: 180px;
   padding: 35px 50px 0;
   font-size: 18px;
-}
-
-.footer__address {
-  line-height: 1.35;
-}
-
-.footer__address-phone,
-.footer__address-mail {
-  text-decoration: none;
-  border-bottom: 1px solid;
 }
 
 .footer__menu-list {
